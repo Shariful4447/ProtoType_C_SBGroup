@@ -335,22 +335,22 @@ async function mockNlpApi(query, scenarioId) {
   ) {
     if (scenarioId === "home") {
       return {
-        text: "Welcome to askMe on LocalSphere. Select a department below to access services.",
-        cards: [
-          {
-            title: "Tax Office",
-            desc: "Property & Business",
-            iconName: "Landmark",
-            action: "Go to Tax",
-          },
-          {
-            title: "City Parking",
-            desc: "Tickets & Permits",
-            iconName: "Car",
-            action: "Go to Parking",
-          },
-        ],
-        topics: ["Community Aid", "Housing Help", "City Events"],
+        text: "Welcome to askMe on LocalSphere. Ask me on tax, housing, waste management, parking rules etc ",
+        // cards: [
+        //   {
+        //     title: "Tax Office",
+        //     desc: "Property & Business",
+        //     iconName: "Landmark",
+        //     action: "Go to Tax",
+        //   },
+        //   {
+        //     title: "City Parking",
+        //     desc: "Tickets & Permits",
+        //     iconName: "Car",
+        //     action: "Go to Parking",
+        //   },
+        // ],
+        // topics: ["Community Aid", "Housing Help", "City Events"],
       };
     } else {
       const rich = getRichResponse(scenarioId);
@@ -697,27 +697,27 @@ export default function App() {
         let welcomeMsg;
         if (activeScenario === "home") {
           welcomeMsg = {
-            text: "Welcome to askMe on LocalSphere. Select a department to access services.",
-            cards: [
-              {
-                title: "Tax Office",
-                desc: "Property & Business",
-                iconName: "Landmark",
-                action: "Go to Tax",
-              },
-              {
-                title: "City Parking",
-                desc: "Tickets & Permits",
-                iconName: "Car",
-                action: "Go to Parking",
-              },
-            ],
-            topics: ["Community Aid", "Housing Help", "City Events"],
-            contact: {
-              phone: "311",
-              email: "info@localsphere.org",
-              hours: "24/7 Citizen Support",
-            },
+            text: "Welcome to askMe on LocalSphere. Ask me on tax, housing, waste management, parking rules etc.",
+            // cards: [
+            //   {
+            //     title: "Tax Office",
+            //     desc: "Property & Business",
+            //     iconName: "Landmark",
+            //     action: "Go to Tax",
+            //   },
+            //   {
+            //     title: "City Parking",
+            //     desc: "Tickets & Permits",
+            //     iconName: "Car",
+            //     action: "Go to Parking",
+            //   },
+            // ],
+            // topics: ["Community Aid", "Housing Help", "City Events"],
+            // contact: {
+            //   phone: "311",
+            //   email: "info@localsphere.org",
+            //   hours: "24/7 Citizen Support",
+            // },
           };
         } else {
           const scenario = SCENARIOS[activeScenario];
