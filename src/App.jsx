@@ -512,7 +512,7 @@ export default function App() {
           });
 
         if (msgs.length === 0) {
-          const welcomeText = `Welcome to ${SITE_BRAND.name}. Select a service portal below or tell me what you're looking for.`;
+          const welcomeText = `Welcome to ${SITE_BRAND.name}. How can I assist you with city services today?`;
           addDoc(messagesRef, {
             role: "assistant",
             content: welcomeText,
@@ -778,7 +778,7 @@ export default function App() {
               {isTyping && (
                 <div className="flex justify-start mb-4">
                   <div className="bg-white border border-gray-100 px-4 py-2 rounded-2xl rounded-tl-none shadow-sm animate-pulse text-blue-600 font-bold text-[10px] uppercase tracking-widest">
-                    Routing Portals...
+                    THINKING...
                   </div>
                 </div>
               )}
