@@ -87,7 +87,7 @@ const THEME = {
   gradient: "from-blue-700 to-sky-600",
   chatHeader: "bg-blue-700 text-white",
   userBubble: "bg-blue-700 text-white",
-  botAvatar: "bg-blue-700 text-white",
+  botAvatar: "bg-blue-600 text-white",
   launcher: "bg-blue-700 hover:bg-blue-800",
 };
 
