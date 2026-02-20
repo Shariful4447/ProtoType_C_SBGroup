@@ -795,12 +795,12 @@ export default function App() {
                   value={inputValue}
                   onChange={(e) => setInputValue(e.target.value)}
                   placeholder="How can we help?"
-                  className="w-full bg-slate-50 border-2 border-slate-200 rounded-[1.5rem] py-4 pl-6 pr-14 text-sm font-medium focus:outline-none focus:border-blue-600 focus:bg-white transition-all shadow-inner"
+                  className="w-full bg-slate-50 border-2 border-blue-600/30 rounded-full py-3.5 pl-6 pr-14 text-sm font-medium focus:outline-none focus:border-blue-600 focus:bg-white transition-all shadow-inner"
                 />
                 <button
                   type="submit"
                   disabled={!inputValue.trim()}
-                  className="absolute right-2 p-2.5 bg-blue-700 text-white rounded-xl shadow-lg hover:scale-105 active:scale-95 transition-all disabled:opacity-30"
+                  className="absolute right-1.5 p-2.5 bg-blue-700 text-white rounded-full shadow-lg hover:scale-105 active:scale-95 transition-all disabled:opacity-30"
                 >
                   <Send size={20} />
                 </button>
