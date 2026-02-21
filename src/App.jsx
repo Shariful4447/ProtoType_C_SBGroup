@@ -376,11 +376,15 @@ const MessageBubble = ({ message }) => {
   if (isUser) {
     return (
       <div className="flex w-full justify-end mb-6">
-        <div className="flex max-w-[80%] flex-row-reverse gap-3">
-          <div className="w-8 h-8 rounded-full bg-blue-700 flex items-center justify-center text-white shrink-0 mt-auto shadow-sm">
+        <div className="flex max-w-[85%] flex-row-reverse gap-3">
+          <div
+            className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${THEME.botAvatar} shadow-sm mt-auto`}
+          >
             <User size={14} />
           </div>
-          <div className="bg-blue-700 p-4 rounded-2xl rounded-tr-none text-white text-sm shadow-sm leading-relaxed">
+          <div
+            className={`relative p-4 rounded-2xl rounded-tr-none shadow-sm ${THEME.primary} text-white text-sm leading-relaxed`}
+          >
             {message.content}
           </div>
         </div>
@@ -396,8 +400,8 @@ const MessageBubble = ({ message }) => {
         >
           <Bot size={16} />
         </div>
-        <div className="flex flex-col gap-3 w-full">
-          <div className="text-gray-800 text-sm leading-relaxed">
+        <div className="flex flex-col gap-3 w-full bg-white border border-gray-100 rounded-2xl rounded-tl-none shadow-lg overflow-hidden">
+          <div className="p-5 text-sm text-slate-700 leading-relaxed whitespace-pre-wrap">
             {data.text}
           </div>
 
@@ -776,9 +780,9 @@ export default function App() {
                 <MessageBubble key={i} message={m} />
               ))}
               {isTyping && (
-                <div className="flex justify-start mb-4">
-                  <div className="bg-white border border-gray-100 px-4 py-2 rounded-2xl rounded-tl-none shadow-sm animate-pulse text-blue-600 font-bold text-[10px] uppercase tracking-widest">
-                    THINKING...
+                <div className="flex justify-start mb-6">
+                  <div className="bg-white border border-gray-100 px-4 py-2 rounded-2xl rounded-tl-none shadow-sm text-blue-700 text-[10px] font-black uppercase tracking-widest animate-pulse italic">
+                    Thinking...
                   </div>
                 </div>
               )}
