@@ -749,14 +749,14 @@ export default function App() {
               className={`h-24 ${THEME.primary} p-8 flex items-center justify-between text-white shrink-0 shadow-lg`}
             >
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center shadow-inner backdrop-blur-md border border-white/20">
+                <div className="w-12 h-12 bg-white/10 border border-white/20 rounded-2xl flex items-center justify-center shadow-inner backdrop-blur-md">
                   <Bot size={24} />
                 </div>
                 <div>
                   <h3 className="font-black text-xl tracking-tight leading-none mb-1.5 tracking-tighter">
                     askMe
                   </h3>
-                  <div className="flex items-center gap-1.5 text-[9px] font-bold text-blue-100 uppercase tracking-widest">
+                  <div className="flex items-center gap-1.5 text-[9px] font-black text-blue-100 uppercase tracking-widest">
                     <span className="w-2.5 h-2.5 bg-green-400 rounded-full animate-pulse shadow-[0_0_8px_rgba(74,222,128,0.6)]"></span>{" "}
                     Live Support
                   </div>
