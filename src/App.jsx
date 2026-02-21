@@ -753,7 +753,7 @@ export default function App() {
                   <Bot size={24} />
                 </div>
                 <div>
-                  <h3 className="font-black text-xl tracking-tight leading-none mb-1.5 tracking-tighter">
+                  <h3 className="font-bold text-lg leading-none mb-1 tracking-tighter">
                     askMe
                   </h3>
                   <div className="flex items-center gap-1.5 text-[9px] font-black text-blue-100 uppercase tracking-widest">
